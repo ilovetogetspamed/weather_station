@@ -39,9 +39,9 @@ Builder.load_string('''
                 text: u'\uF127'
                 on_release: root.open_menu_head_errors()
             ActionButton:
-                id: ab_menu_operator_kpi
+                id: ab_menu_kpi
                 text: u'\uF080'
-                on_release: root.open_menu_operator_kpi()
+                on_release: root.open_menu_kpi()
             ActionButton:
                 id: ab_menu_weather     # Weather App
                 text: u'\uF0E9'
@@ -118,7 +118,7 @@ class NavBar(ActionBar):
         Logger.info('Weather Station: open menu head breaks')
 
     def open_menu_operator_kpi(self):
-        Logger.info('Weather Station: open menu operator KPI')
+        Logger.info('Weather Station: open menu KPI')
 
     def open_menu_weather(self):
         Logger.info('Weather Station: open menu weather')
